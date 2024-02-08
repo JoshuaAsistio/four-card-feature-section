@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+  font-size: 1.75rem;
+  color: hsl(234, 12%, 34%);
+  text-align: center;
+  font-weight: 100;
+  margin-top: 2.8125rem;
+}
+
+h1 span {
+  font-weight: 700;
+  margin-top: 1.5625rem;
+}
+
+.hero-introduction {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1.09375rem;
+  color: hsl(229, 6%, 66%);
+}
+
+div:has(.card) {
+  height: max-content;
+  padding-bottom: 2.5rem;
+}
+
+.card {
+  background-color: white;
+  padding: 2.0625rem;
+  width: 24.30555555555556vw;
+  min-height: 41.87604690117253vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px rgb(216, 216, 216);
+}
+
+.card__title {
+  /* font-size: 18px; */
+  font-weight: 700;
+  color: hsl(234, 12%, 34%);
+}
+
+.card__description {
+  font-size: 0.875rem;
+  margin-top: 1.5625rem;
+  color: hsl(229, 6%, 66%);
+}
+
+.card__image {
+  width: 4.444444444444444vw;
+  height: auto;
+  margin-left: 80%;
+  margin-top: 2.8125rem;
+}
+
+.card:first-of-type {
+  margin: auto;
+  margin-top: 2.1875rem;
+  border-top: 0.3125rem solid hsl(0, 78%, 62%);
+}
+
+.card:nth-of-type(2) {
+  border-top: 0.3125rem solid hsl(180, 62%, 55%);
+  margin-right: 28.47222222222222vw;
+  margin-left: 11.45833333333333vw;
+}
+
+.card:nth-of-type(3) {
+  border-top: 0.3125rem solid hsl(212, 86%, 64%);
+}
+
+.card:last-of-type {
+  border-top: 0.3125rem solid hsl(34, 97%, 64%);
+  margin: auto;
+  margin-top: -16.75041876046901vh;
+}
+
+.card:nth-of-type(2),
+.card:nth-of-type(3) {
+  display: inline-block;
+  margin-top: -18.42546063651591vh;
+}
+
+@media screen and (min-width: 2000px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .hero-introduction {
+    font-size: 2rem;
+  }
+
+  .card__title {
+    font-size: 2rem;
+  }
+
+  .card__description {
+    font-size: 1.75rem;
+    margin-top: 3.125rem;
+  }
+
+  .card__image {
+    margin-top: 5.625rem;
+  }
+
+  .card:first-of-type {
+    margin-top: 4.375rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card:nth-of-type(2),
+  .card:nth-of-type(3) {
+    display: block;
+    margin: auto;
+    margin-top: 3.125rem;
+  }
+
+  .card {
+    width: 310px;
+    min-height: 220px;
+  }
+
+  .card:last-of-type {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .card__image {
+    width: 57px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  br {
+    display: none;
+    visibility: hidden;
+  }
+}
